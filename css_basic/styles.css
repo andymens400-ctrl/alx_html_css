@@ -1,0 +1,40 @@
+/* Reset some default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body is a flex container with vertical stacking */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* make sure it fills screen height */
+}
+/* Main is a flex container with horizontal split */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* take up available space between header/footer */
+}
+/* Article takes 2/3 of the width */
+article {
+    flex: 2;
+    padding: 1rem;
+    overflow-y: auto; /* scroll inside if content is long */
+    background-color: #f9f9f9; /* optional styling */
+}
+
+/* Aside takes 1/3 of the width */
+aside {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background-color: #e9e9e9; /* optional styling */
+}
+/* Header and Footer basic styles */
+header, footer {
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
