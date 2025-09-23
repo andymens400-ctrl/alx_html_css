@@ -1,3 +1,8 @@
+.logo {
+  font-size: 2em;
+  padding-right: 10px;
+}
+
 /* Reset some default browser spacing */
 * {
     margin: 0;
@@ -9,6 +14,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* make sure it fills screen height */
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
 }
 /* Main is a flex container with horizontal split */
 main {
@@ -23,6 +32,26 @@ article {
     overflow-y: auto; /* scroll inside if content is long */
     background-color: #f9f9f9; /* optional styling */
 }
+/* Inside <article> */
+article h1, article h2, article h3 {
+  color: #0066cc;
+}
+article p {
+  margin-bottom: 1em;
+}
+article table {
+  border-collapse: collapse;
+  width: 100%;
+}
+article table th,
+article table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+article table th {
+  background-color: #f2f2f2;
+}
 
 /* Aside takes 1/3 of the width */
 aside {
@@ -30,11 +59,35 @@ aside {
     padding: 1rem;
     overflow-y: auto;
     background-color: #e9e9e9; /* optional styling */
+    background: #f9f9f9;
+  border-left: 2px solid #ddd;
+  padding: 15px;
 }
-/* Header and Footer basic styles */
-header, footer {
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    text-align: center;
+/* Header style */
+header {
+  background: #282c34;
+  padding: 10px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header a:hover {
+  text-decoration: underline;
+}
+/* Footer */
+footer {
+  background: #282c34;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
 }
