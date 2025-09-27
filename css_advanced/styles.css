@@ -263,16 +263,16 @@ nav ul li a:hover {
  width: 90%;
 }
 
-.rating {
+.ratings {
   display: flex;
   gap: 2px;
   margin: 0 10px 10px;
   color: #c271ff;
 }
-.rating  div:last-child i{
+.ratings  div:last-child i{
     color:gray;
 }
-.rating div {
+.ratings div {
   margin: 0;
 }
 
